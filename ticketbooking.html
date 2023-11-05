@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Details</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        label {
+            font-size: 18px;
+            display: block;
+            margin-top: 10px;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #00008B;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .date-input {
+            width: 100%;
+        }
+
+        .find-button {
+            background-color: #00008B;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Details</h1>
+        <form action="candidates.html">
+            <label for="mode">Mode of Transport:</label>
+            <select id="mode" name="mode">
+                <option value="train">Train</option>
+                <option value="bus">Bus</option>
+                <option value="plane">Plane</option>
+                <option value="cab">Cab</option>
+            </select>
+            <label for="departure">Place of Departure:</label>
+            <input type="text" id="departure" name="departure" placeholder="Place of Departure" required>
+            <label for="departure">Destination:</label>
+            <input type="text" id="departure" name "departure" placeholder="Destination" required>
+            <label for="datetime">Date of Departure:</label>
+            <div class="date-time-container">
+                <input type="date" id="date" name="date" class="date-input" required>
+            </div>
+            <button type="submit" class="find-button">Find Matching Travelers</button>
+        </form>
+    </div>
+</body>
+</html>
